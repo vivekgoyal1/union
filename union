@@ -1,0 +1,13 @@
+#include <stdio.h>
+union contactno
+{
+char mobileno[10];
+char landlineno[10];
+char pageno[10];
+}
+main()
+{
+union contactno val={"975966075","55555","454-7777"};
+printf("%s",val.pageno);
+printf("%s",val.mobileno);
+}
