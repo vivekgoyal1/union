@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main()
+{
+union {int i1;int i2;}myvar={.i2=100};
+printf("%d %d",myvar.i1,myvar.i2);
+}
